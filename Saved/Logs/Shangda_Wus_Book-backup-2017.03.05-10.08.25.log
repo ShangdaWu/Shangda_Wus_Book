@@ -1,0 +1,986 @@
+﻿Log file open, 03/05/17 00:46:51
+LogInit:Display: Running engine for game: Shangda_Wus_Book
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1194107022) SRandInit(-1194107022).
+LogTaskGraph: Started task graph with 5 named threads and 6 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.070382
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3299760
+LogInit: Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Feb 14 2017 02:04:14
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.03.04-16.46.52:920][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.04-16.46.52:920][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.04-16.46.52:936][  0]LogInit: Computer: DESKTOP-4SGI5H6
+[2017.03.04-16.46.52:936][  0]LogInit: User: shang
+[2017.03.04-16.46.52:936][  0]LogInit: CPU Page size=65536, Cores=2
+[2017.03.04-16.46.52:936][  0]LogInit: High frequency timer resolution =3.234371 MHz
+[2017.03.04-16.46.52:936][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2017.03.04-16.46.52:936][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.04-16.46.52:936][  0]LogMemory: Process Physical Memory: 264.61 MB used, 264.61 MB peak
+[2017.03.04-16.46.52:936][  0]LogMemory: Process Virtual Memory: 262.29 MB used, 262.29 MB peak
+[2017.03.04-16.46.52:936][  0]LogMemory: Physical Memory: 4397.15 MB used,  11803.75 MB free, 16200.91 MB total
+[2017.03.04-16.46.52:936][  0]LogMemory: Virtual Memory: 641.67 MB used,  11803.75 MB free, 134217728.00 MB total
+[2017.03.04-16.46.53:031][  0]LogInit: Overriding culture en with editor configuration.
+[2017.03.04-16.46.53:758][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.04-16.46.53:790][  0]LogD3D11RHI:    0. 'NVIDIA Quadro M1000M' (Feature Level 11_0)
+[2017.03.04-16.46.53:790][  0]LogD3D11RHI:       4064/0/8100 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.03.04-16.46.53:799][  0]LogD3D11RHI:    1. 'Intel(R) Iris(TM) Graphics 550' (Feature Level 11_0)
+[2017.03.04-16.46.53:799][  0]LogD3D11RHI:       128/0/8100 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.03.04-16.46.53:800][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.04-16.46.53:800][  0]LogD3D11RHI:       0/0/8100 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.04-16.46.53:800][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.04-16.46.53:806][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.04-16.46.53:806][  0]LogD3D11RHI:     GPU DeviceId: 0x13b1 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.04-16.46.53:806][  0]LogWindows: EnumDisplayDevices:
+[2017.03.04-16.46.53:806][  0]LogWindows:    0. 'Intel(R) Iris(TM) Graphics 550' (P:1 D:1)
+[2017.03.04-16.46.53:806][  0]LogWindows:    1. 'Intel(R) Iris(TM) Graphics 550' (P:0 D:0)
+[2017.03.04-16.46.53:806][  0]LogWindows:    2. 'Intel(R) Iris(TM) Graphics 550' (P:0 D:0)
+[2017.03.04-16.46.53:806][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.03.04-16.46.53:806][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro M1000M
+[2017.03.04-16.46.53:806][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.03.04-16.46.53:806][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.03.04-16.46.53:806][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.04-16.46.53:823][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.04-16.46.53:836][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.03.04-16.46.53:837][  0]LogShaderCompilers: Guid format shader working directory is -27 characters bigger than the processId version (../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Intermediate/Shaders/WorkingDirectory/16556/).
+[2017.03.04-16.46.53:837][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/shang/AppData/Local/Temp/UnrealShaderWorkingDir/CC622C3C485A72EC18BEB089E58484ED/'.
+[2017.03.04-16.46.53:837][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.04-16.46.54:849][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.04-16.46.54:898][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.03.04-16.46.54:947][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.03.04-16.46.54:993][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.03.04-16.46.55:045][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.03.04-16.46.55:098][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.04-16.46.55:150][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.04-16.46.55:200][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.04-16.46.55:242][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.04-16.46.55:292][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.04-16.46.55:341][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.04-16.46.55:390][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.04-16.46.55:440][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.04-16.46.55:496][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.04-16.46.55:548][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.04-16.46.55:649][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.04-16.46.55:649][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.04-16.46.55:683][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.04-16.46.55:771][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.04-16.46.55:805][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.04-16.46.55:855][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.03.04-16.46.55:904][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.04-16.46.55:954][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.04-16.46.56:005][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.04-16.46.56:005][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.04-16.46.56:401][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.04-16.46.56:459][  0]LogDerivedDataCache: Loaded boot cache 0.06s 60MB C:/Users/shang/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.04-16.46.56:459][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/shang/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.03.04-16.46.56:459][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.04-16.46.56:459][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.04-16.46.56:459][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.04-16.46.56:459][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.04-16.46.56:476][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.04-16.46.56:489][  0]LogDerivedDataCache: Using Local data cache path C:/Users/shang/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.04-16.46.56:497][  0]LogSlate: Using Freetype 2.6.0
+[2017.03.04-16.46.56:498][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.04-16.46.56:498][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.04-16.46.56:723][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.04-16.46.56:726][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.04-16.46.56:918][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.03.04-16.46.56:958][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.03.04-16.46.57:004][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.03.04-16.46.57:004][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.03.04-16.46.57:004][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.04-16.46.57:533][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: shangda_wus_book, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2213960243
+[2017.03.04-16.46.57:579][  0]LogAssetRegistry: FAssetRegistry took 0.0219 seconds to start up
+[2017.03.04-16.46.57:621][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.018591 seconds
+[2017.03.04-16.46.57:626][  0]LogUObjectArray: 32475 objects as part of root set at end of initial load.
+[2017.03.04-16.46.57:626][  0]LogUObjectAllocator: 7073368 out of 0 bytes used by permanent object pool.
+[2017.03.04-16.46.57:626][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.04-16.46.57:681][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.04-16.46.59:130][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.03.04-16.46.59:164][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.04-16.46.59:613][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.03.04-16.46.59:959][  0]SourceControl: Info Source control is disabled
+[2017.03.04-16.46.59:959][  0]SourceControl: Info Source control is disabled
+[2017.03.04-16.47.00:002][  0]SourceControl: Info Source control is disabled
+[2017.03.04-16.47.00:046][  0]SourceControl: Info Source control is disabled
+[2017.03.04-16.47.01:148][  0]LogEngine: Initializing Engine...
+[2017.03.04-16.47.01:149][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.03.04-16.47.01:366][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.03.04-16.47.01:374][  0]LogInit: XAudio2 using '扬声器 (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.04-16.47.01:439][  0]LogInit: FAudioDevice initialized.
+[2017.03.04-16.47.01:474][  0]LogDerivedDataCache: Saved boot cache 0.03s 60MB C:/Users/shang/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.04-16.47.01:483][  0]LogInit: Texture streaming: Enabled
+[2017.03.04-16.47.01:574][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.03.04-16.47.01:657][  0]LogInit: Transaction tracking system initialized
+[2017.03.04-16.47.01:989][  0]BlueprintLog: New page: Editor Load
+[2017.03.04-16.47.02:814][  0]LocalizationService: Info Localization service is disabled
+[2017.03.04-16.47.03:441][  0]LogConsoleResponse:Display: 
+[2017.03.04-16.47.03:566][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.03.04-16.47.03:566][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.04-16.47.03:770][  0]LogFileCache: Scanning file cache for directory 'C:/Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/' took 0.01s
+[2017.03.04-16.47.04:519][  0]SourceControl: Info Source control is disabled
+[2017.03.04-16.47.04:519][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.04-16.47.04:520][  0]LightingResults: New page: Lighting Build
+[2017.03.04-16.47.04:561][  0]MapCheck: New page: Map Check
+[2017.03.04-16.47.04:561][  0]LightingResults: New page: Lighting Build
+[2017.03.04-16.47.04:754][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2017.03.04-16.47.04:755][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.03.04-16.47.04:761][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.04-16.47.04:765][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.04-16.47.04:802][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 36.803ms to complete.
+[2017.03.04-16.47.04:802][  0]LogFileHelpers: Loading map 'Template_Default' took 0.282
+[2017.03.04-16.47.04:899][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软拼音).
+[2017.03.04-16.47.04:899][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软拼音).
+[2017.03.04-16.47.05:031][  0]LogCollectionManager: Loaded 0 collections in 0.001284 seconds
+[2017.03.04-16.47.05:128][  0]LogFileCache: Scanning file cache for directory 'C:/Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Saved/Collections/' took 0.01s
+[2017.03.04-16.47.05:128][  0]LogFileCache: Scanning file cache for directory 'C:/Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/Developers/shang/Collections/' took 0.01s
+[2017.03.04-16.47.05:128][  0]LogFileCache: Scanning file cache for directory 'C:/Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/Collections/' took 0.01s
+[2017.03.04-16.47.05:128][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.03.04-16.47.05:137][  0]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 2244 classes and 450 folders.
+[2017.03.04-16.47.05:142][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.04-16.47.05:142][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.04-16.47.05:207][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2017.03.04-16.47.05:244][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.03.04-16.47.05:287][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.03.04-16.47.05:383][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.04-16.47.05:391][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.04-16.47.05:454][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.03.04-16.47.05:454][  0]LogLoad: (Engine Initialization) Total time: 14.60 seconds
+[2017.03.04-16.47.05:454][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.08 seconds
+[2017.03.04-16.47.05:454][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.03.04-16.47.05:473][  0]LogOcInput: OculusInput pre-init called
+[2017.03.04-16.47.05:489][  0]LogAssetRegistry: Asset discovery search completed in 7.9324 seconds
+[2017.03.04-16.47.05:489][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000003 seconds (found 0 objects)
+[2017.03.04-16.47.05:489][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000022 seconds (updated 0 objects)
+[2017.03.04-16.47.05:493][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.04-16.47.05:501][  0]LogSlate: Took 0.000175 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.03.04-16.47.05:505][  0]LogSlate: Took 0.000156 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.03.04-16.47.05:509][  0]LogSlate: Took 0.000194 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.03.04-16.47.05:602][  0]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.04-16.47.05:651][  0]LogRenderer: Reallocating scene render targets to support 1208x576 NumSamples 1 (Frame:2).
+[2017.03.04-16.47.08:056][133]LogSlate: Took 0.000182 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.04-16.47.08:507][133]LogAIModule: Creating AISystem for world Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.47.08:551][133]Cmd: MAP LOAD FILE="../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/Shangda_Wus_Book_Main_Scenes.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.04-16.47.08:551][133]LightingResults: New page: Lighting Build
+[2017.03.04-16.47.08:553][133]LoadErrors: New page: Loading map: Shangda_Wus_Book_Main_Scenes.umap
+[2017.03.04-16.47.08:554][133]MapCheck: New page: Map Check
+[2017.03.04-16.47.08:554][133]LightingResults: New page: Lighting Build
+[2017.03.04-16.47.08:652][133]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.04-16.47.08:682][133]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.04-16.47.08:723][133]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 40.896ms to complete.
+[2017.03.04-16.47.08:724][133]LogFileHelpers: Loading map 'Shangda_Wus_Book_Main_Scenes' took 0.174
+[2017.03.04-16.47.12:261][308]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 112 classes and 0 folders.
+[2017.03.04-16.47.12:986][308]LogSlate: Took 0.000180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.04-16.47.12:987][308]LogSlate: Took 0.000166 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.03.04-16.47.18:274][579]LogSlate: Took 0.000219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.03.04-16.47.34:364][498]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.47.35:635][562]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.03.04-16.47.35:668][562]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.47.35:669][562]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.04-16.47.35:669][562]PIE: New page: PIE session: Shangda_Wus_Book_Main_Scenes (Mar 5, 2017, 8:47:35 AM)
+[2017.03.04-16.47.35:669][562]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.47.35:673][562]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004085s)
+[2017.03.04-16.47.35:674][562]LogAIModule: Creating AISystem for world Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.47.35:674][562]LogPlayLevel: PIE: World Init took: (0.001310s)
+[2017.03.04-16.47.35:675][562]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes to /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes (0.005662s)
+[2017.03.04-16.47.35:707][562]LogInit: XAudio2 using '扬声器 (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.04-16.47.35:719][562]LogInit: FAudioDevice initialized.
+[2017.03.04-16.47.35:793][562]LogLoad: Game class is 'GP_GameMode_C'
+[2017.03.04-16.47.35:796][562]LogWorld: Bringing World /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes up for play (max tick rate 60) at 2017.03.05-00.47.35
+[2017.03.04-16.47.35:797][562]LogWorld: Bringing up level for play took: 0.002512
+[2017.03.04-16.47.35:845][562]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2017.03.04-16.47.35:852][562]PIE: Info Play in editor start time for /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes 0.513
+[2017.03.04-16.47.35:852][562]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.47.35:872][562]LogRenderer: Reallocating scene render targets to support 1208x996 NumSamples 1 (Frame:1239).
+[2017.03.04-16.47.35:872][562]LogSlate: Took 0.003006 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2017.03.04-16.47.37:055][618]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.47.37:088][618]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.50.23:979][574]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.50.24:589][598]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.03.04-16.50.24:615][598]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.50.24:615][598]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.04-16.50.24:615][598]PIE: New page: PIE session: Shangda_Wus_Book_Main_Scenes (Mar 5, 2017, 8:50:24 AM)
+[2017.03.04-16.50.24:615][598]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.50.24:618][598]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003194s)
+[2017.03.04-16.50.24:619][598]LogAIModule: Creating AISystem for world Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.50.24:620][598]LogPlayLevel: PIE: World Init took: (0.001286s)
+[2017.03.04-16.50.24:620][598]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes to /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes (0.004967s)
+[2017.03.04-16.50.24:668][598]LogInit: XAudio2 using '扬声器 (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.04-16.50.24:681][598]LogInit: FAudioDevice initialized.
+[2017.03.04-16.50.24:747][598]LogLoad: Game class is 'GP_GameMode_C'
+[2017.03.04-16.50.24:750][598]LogWorld: Bringing World /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes up for play (max tick rate 60) at 2017.03.05-00.50.24
+[2017.03.04-16.50.24:750][598]LogWorld: Bringing up level for play took: 0.002673
+[2017.03.04-16.50.24:762][598]PIE: Info Play in editor start time for /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes -0.577
+[2017.03.04-16.50.24:763][598]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.50.59:134][347]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 0
+[2017.03.04-16.51.00:099][400]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 0
+[2017.03.04-16.51.00:524][424]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 0
+[2017.03.04-16.51.00:728][435]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 0
+[2017.03.04-16.51.00:890][444]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 0
+[2017.03.04-16.51.01:072][454]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 0
+[2017.03.04-16.51.01:238][463]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 0
+[2017.03.04-16.51.01:418][473]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 0
+[2017.03.04-16.51.04:557][643]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.51.04:587][643]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.51.20:008][500]LogEditorTransaction: Undo Create Reroute Node
+[2017.03.04-16.51.33:002][213]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.51.33:643][239]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.03.04-16.51.33:663][239]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.51.33:663][239]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.04-16.51.33:663][239]PIE: New page: PIE session: Shangda_Wus_Book_Main_Scenes (Mar 5, 2017, 8:51:33 AM)
+[2017.03.04-16.51.33:663][239]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.51.33:669][239]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005574s)
+[2017.03.04-16.51.33:670][239]LogAIModule: Creating AISystem for world Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.51.33:670][239]LogPlayLevel: PIE: World Init took: (0.000844s)
+[2017.03.04-16.51.33:670][239]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes to /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes (0.006726s)
+[2017.03.04-16.51.33:707][239]LogInit: XAudio2 using '扬声器 (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.04-16.51.33:718][239]LogInit: FAudioDevice initialized.
+[2017.03.04-16.51.33:774][239]LogLoad: Game class is 'GP_GameMode_C'
+[2017.03.04-16.51.33:776][239]LogWorld: Bringing World /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes up for play (max tick rate 60) at 2017.03.05-00.51.33
+[2017.03.04-16.51.33:776][239]LogWorld: Bringing up level for play took: 0.001948
+[2017.03.04-16.51.33:787][239]PIE: Info Play in editor start time for /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes 0.448
+[2017.03.04-16.51.33:788][239]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.52.05:492][894]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3500
+[2017.03.04-16.52.07:143][974]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.52.07:178][974]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.52.40:056][821]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.52.40:674][846]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.03.04-16.52.40:695][846]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.52.40:695][846]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.04-16.52.40:696][846]PIE: New page: PIE session: Shangda_Wus_Book_Main_Scenes (Mar 5, 2017, 8:52:40 AM)
+[2017.03.04-16.52.40:696][846]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.52.40:699][846]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003396s)
+[2017.03.04-16.52.40:700][846]LogAIModule: Creating AISystem for world Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.52.40:700][846]LogPlayLevel: PIE: World Init took: (0.000917s)
+[2017.03.04-16.52.40:700][846]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes to /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes (0.004582s)
+[2017.03.04-16.52.40:738][846]LogInit: XAudio2 using '扬声器 (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.04-16.52.40:749][846]LogInit: FAudioDevice initialized.
+[2017.03.04-16.52.40:803][846]LogLoad: Game class is 'GP_GameMode_C'
+[2017.03.04-16.52.40:807][846]LogWorld: Bringing World /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes up for play (max tick rate 60) at 2017.03.05-00.52.40
+[2017.03.04-16.52.40:807][846]LogWorld: Bringing up level for play took: 0.002555
+[2017.03.04-16.52.40:816][846]PIE: Info Play in editor start time for /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes -0.524
+[2017.03.04-16.52.40:816][846]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.53.15:250][643]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3485
+[2017.03.04-16.53.16:180][693]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3470
+[2017.03.04-16.53.16:679][720]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3455
+[2017.03.04-16.53.16:984][736]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3440
+[2017.03.04-16.53.17:195][747]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3425
+[2017.03.04-16.53.17:351][755]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3410
+[2017.03.04-16.53.17:568][766]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3395
+[2017.03.04-16.53.17:765][776]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3380
+[2017.03.04-16.53.17:955][786]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 3365
+[2017.03.04-16.53.19:153][843]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.53.19:182][843]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.54.48:851][ 51]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.54.59:306][631]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.54.59:914][656]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.03.04-16.54.59:950][656]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.54.59:950][656]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.04-16.54.59:950][656]PIE: New page: PIE session: Shangda_Wus_Book_Main_Scenes (Mar 5, 2017, 8:54:59 AM)
+[2017.03.04-16.54.59:950][656]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.54.59:954][656]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003596s)
+[2017.03.04-16.54.59:955][656]LogAIModule: Creating AISystem for world Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.54.59:955][656]LogPlayLevel: PIE: World Init took: (0.001013s)
+[2017.03.04-16.54.59:955][656]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes to /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes (0.004860s)
+[2017.03.04-16.54.59:994][656]LogInit: XAudio2 using '扬声器 (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.04-16.55.00:009][656]LogInit: FAudioDevice initialized.
+[2017.03.04-16.55.00:072][656]LogLoad: Game class is 'GP_GameMode_C'
+[2017.03.04-16.55.00:074][656]LogWorld: Bringing World /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes up for play (max tick rate 60) at 2017.03.05-00.55.00
+[2017.03.04-16.55.00:075][656]LogWorld: Bringing up level for play took: 0.001979
+[2017.03.04-16.55.00:082][656]PIE: Info Play in editor start time for /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes 0.743
+[2017.03.04-16.55.00:083][656]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.55.49:440][249]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.55.49:479][249]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.56.01:065][923]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.56.01:647][948]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.03.04-16.56.01:671][948]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.56.01:672][948]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.04-16.56.01:672][948]PIE: New page: PIE session: Shangda_Wus_Book_Main_Scenes (Mar 5, 2017, 8:56:01 AM)
+[2017.03.04-16.56.01:672][948]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.56.01:676][948]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003258s)
+[2017.03.04-16.56.01:676][948]LogAIModule: Creating AISystem for world Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.56.01:677][948]LogPlayLevel: PIE: World Init took: (0.001027s)
+[2017.03.04-16.56.01:677][948]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes to /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes (0.004618s)
+[2017.03.04-16.56.01:718][948]LogInit: XAudio2 using '扬声器 (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.04-16.56.01:730][948]LogInit: FAudioDevice initialized.
+[2017.03.04-16.56.01:790][948]LogLoad: Game class is 'GP_GameMode_C'
+[2017.03.04-16.56.01:793][948]LogWorld: Bringing World /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes up for play (max tick rate 60) at 2017.03.05-00.56.01
+[2017.03.04-16.56.01:793][948]LogWorld: Bringing up level for play took: 0.002096
+[2017.03.04-16.56.01:801][948]PIE: Info Play in editor start time for /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes 0.461
+[2017.03.04-16.56.01:802][948]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.56.49:872][696]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.56.49:914][696]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.57.36:349][367]LogSavePackage: Save=45.74ms
+[2017.03.04-16.57.36:349][367]LogSavePackage: Moving '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Saved/UI_Main_Scenes25B735EB4AA7C30852BC79B09A8D0F62.tmp' to '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/User_Interfaces/UI_Main_Scenes.uasset'
+[2017.03.04-16.57.36:355][367]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/User_Interfaces/UI_Main_Scenes.uasset
+[2017.03.04-16.58.31:236][535]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.58.31:384][535]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  
+[2017.03.04-16.58.59:363][ 81]BlueprintLog: New page: Compile UI_Main_Scenes
+[2017.03.04-16.58.59:545][ 81]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  
+[2017.03.04-16.58.59:974][101]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.03.04-16.59.00:010][101]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.59.00:010][101]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.04-16.59.00:010][101]PIE: New page: PIE session: Shangda_Wus_Book_Main_Scenes (Mar 5, 2017, 8:59:00 AM)
+[2017.03.04-16.59.00:010][101]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.59.00:014][101]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003361s)
+[2017.03.04-16.59.00:015][101]LogAIModule: Creating AISystem for world Shangda_Wus_Book_Main_Scenes
+[2017.03.04-16.59.00:015][101]LogPlayLevel: PIE: World Init took: (0.000910s)
+[2017.03.04-16.59.00:015][101]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes to /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes (0.004517s)
+[2017.03.04-16.59.00:046][101]LogInit: XAudio2 using '扬声器 (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.04-16.59.00:057][101]LogInit: FAudioDevice initialized.
+[2017.03.04-16.59.00:108][101]LogLoad: Game class is 'GP_GameMode_C'
+[2017.03.04-16.59.00:113][101]LogWorld: Bringing World /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes up for play (max tick rate 60) at 2017.03.05-00.59.00
+[2017.03.04-16.59.00:114][101]LogWorld: Bringing up level for play took: 0.004601
+[2017.03.04-16.59.00:121][101]PIE: Info Play in editor start time for /Game/UEDPIE_0_Shangda_Wus_Book_Main_Scenes 0.782
+[2017.03.04-16.59.00:122][101]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.59.44:035][301]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:053][302]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:073][303]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:086][304]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:107][305]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:130][306]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:150][307]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:168][308]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:186][309]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:204][310]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:223][311]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:244][312]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:264][313]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:283][314]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:301][315]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:319][316]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:338][317]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:356][318]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:379][319]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:398][320]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:417][321]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:435][322]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:453][323]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:471][324]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:490][325]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:490][325]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:513][326]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:531][327]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:550][328]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:568][329]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:586][330]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:604][331]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:623][332]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:646][333]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:665][334]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:683][335]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:702][336]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:719][337]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:738][338]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:756][339]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:779][340]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:798][341]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:817][342]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:836][343]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:854][344]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:873][345]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:893][346]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:915][347]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:933][348]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:951][349]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:970][350]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.44:988][351]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:012][352]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:032][353]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:051][354]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:069][355]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:087][356]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:106][357]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:127][358]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:143][359]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:164][360]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:183][361]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:202][362]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:220][363]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:238][364]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:258][365]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:282][366]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:301][367]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:318][368]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:337][369]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:356][370]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:380][371]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:398][372]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:417][373]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:438][374]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:463][375]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:482][376]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:502][377]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:520][378]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:539][379]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:558][380]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:582][381]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:601][382]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:619][383]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:638][384]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:656][385]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:679][386]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:699][387]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:717][388]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:737][389]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:755][390]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:776][391]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:799][392]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:819][393]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:839][394]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:860][395]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:882][396]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:900][397]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:920][398]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:939][399]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:960][400]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.45:982][401]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:000][402]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:019][403]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:038][404]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:056][405]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:077][406]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:099][407]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:118][408]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:137][409]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:155][410]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:173][411]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:193][412]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:214][413]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:234][414]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:252][415]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:271][416]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:289][417]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:307][418]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:329][419]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:349][420]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:368][421]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:386][422]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:405][423]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:423][424]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:443][425]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:466][426]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:484][427]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:503][428]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:503][428]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:521][429]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:541][430]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:563][431]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:583][432]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:602][433]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:621][434]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:639][435]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:658][436]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:679][437]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:697][438]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:714][439]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:735][440]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:753][441]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:771][442]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:788][443]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:807][444]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:826][445]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:847][446]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:867][447]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:886][448]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:905][449]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:929][450]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:946][451]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:967][452]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.46:987][453]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:007][454]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:036][455]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:056][456]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:080][457]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:096][458]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:117][459]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:137][460]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:160][461]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:186][462]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:206][463]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:232][464]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:252][465]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:271][466]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:291][467]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:316][468]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:331][469]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:351][470]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:371][471]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:391][472]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:409][473]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:435][474]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:455][475]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:474][476]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:498][477]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:518][478]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:539][479]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:559][480]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:583][481]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:602][482]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:622][483]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:640][484]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:660][485]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:683][486]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:702][487]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:722][488]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:741][489]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:763][490]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:784][491]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:802][492]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:820][493]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:839][494]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:858][495]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:877][496]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:900][497]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:919][498]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:938][499]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:956][500]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:975][501]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.47:998][502]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:018][503]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:036][504]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:056][505]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:074][506]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:092][507]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:111][508]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:134][509]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:153][510]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:172][511]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:191][512]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:208][513]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:226][514]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:247][515]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:266][516]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:284][517]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:303][518]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:321][519]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:339][520]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:358][521]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:376][522]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:399][523]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:418][524]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:437][525]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:455][526]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:473][527]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:492][528]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:511][529]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:512][529]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:536][530]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:555][531]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:573][532]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:591][533]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:610][534]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:630][535]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:652][536]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:671][537]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:689][538]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:707][539]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:726][540]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:746][541]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:769][542]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:787][543]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:806][544]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:824][545]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:842][546]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:863][547]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:884][548]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:903][549]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:923][550]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:941][551]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:959][552]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:977][553]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.48:999][554]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:019][555]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:038][556]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:058][557]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:076][558]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:097][559]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:117][560]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:138][561]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:156][562]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:175][563]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:193][564]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:215][565]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:231][566]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:246][567]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:269][568]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:287][569]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:306][570]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:325][571]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:343][572]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:364][573]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:384][574]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:403][575]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:422][576]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:441][577]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:460][578]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:479][579]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:503][580]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:522][581]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:541][582]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:559][583]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:578][584]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:601][585]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:620][586]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:638][587]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:657][588]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:676][589]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:694][590]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:716][591]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:731][592]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:751][593]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:770][594]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:789][595]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:808][596]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:826][597]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:847][598]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:871][599]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:889][600]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:907][601]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:926][602]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:943][603]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:965][604]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.49:987][605]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:006][606]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:025][607]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:043][608]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:062][609]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:087][610]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:106][611]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:125][612]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:145][613]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:169][614]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:188][615]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:206][616]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:225][617]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:243][618]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:261][619]LogBlueprintUserMessages: [UI_Main_Scenes_C_2] 你已经流血致死了
+[2017.03.04-16.59.50:290][620]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.59.50:322][620]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel' has LevelScriptBlueprint '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes' with GeneratedClass '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes_C' with ClassGeneratedBy '/Game/Shangda_Wus_Book_Main_Scenes.Shangda_Wus_Book_Main_Scenes:PersistentLevel.Shangda_Wus_Book_Main_Scenes'
+[2017.03.04-16.59.53:146][762]LogSavePackage: Save=49.46ms
+[2017.03.04-16.59.53:146][762]LogSavePackage: Moving '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Saved/UI_Main_Scenes35CDDBC84A22ABE477963C8D5C084906.tmp' to '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/User_Interfaces/UI_Main_Scenes.uasset'
+[2017.03.04-16.59.53:150][762]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/User_Interfaces/UI_Main_Scenes.uasset
+[2017.03.04-16.59.53:875][793]LogSavePackage: Save=51.43ms
+[2017.03.04-16.59.53:875][793]LogSavePackage: Moving '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Saved/UI_Main_Scenes8B9B91554DAF2C82DFA5BC84A2BC8C61.tmp' to '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/User_Interfaces/UI_Main_Scenes.uasset'
+[2017.03.04-16.59.53:877][793]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/User_Interfaces/UI_Main_Scenes.uasset
+[2017.03.04-16.59.54:848][838]LogSavePackage: Save=45.03ms
+[2017.03.04-16.59.54:848][838]LogSavePackage: Moving '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Saved/UI_Main_Scenes6C6C96944D35460F0F29B1803CA086A1.tmp' to '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/User_Interfaces/UI_Main_Scenes.uasset'
+[2017.03.04-16.59.54:850][838]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/User_Interfaces/UI_Main_Scenes.uasset
+[2017.03.04-16.59.55:626][878]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软拼音).
+[2017.03.04-16.59.55:626][878]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软拼音).
+[2017.03.04-16.59.55:626][878]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软拼音).
+[2017.03.04-16.59.55:627][878]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软拼音).
+[2017.03.04-16.59.55:873][879]Cmd: QUIT_EDITOR
+[2017.03.04-16.59.56:576][879]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软拼音).
+[2017.03.04-16.59.56:577][879]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软拼音).
+[2017.03.04-16.59.56:625][879]LogExit: Preparing to exit.
+[2017.03.04-16.59.57:001][879]LogDirectoryWatcher: A directory notification for 'C:/Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/' was aborted.
+[2017.03.04-16.59.57:061][879]LogExit: Editor shut down
+[2017.03.04-16.59.57:062][879]LogExit: Transaction tracking system shut down
+[2017.03.04-16.59.57:164][879]LogObj: Freed 0b from 0 cluster array pools.
+[2017.03.04-16.59.57:164][879]LogExit: Object subsystem successfully closed.
+[2017.03.04-16.59.57:177][879]LogD3D11RHI: Shutdown
+[2017.03.04-16.59.57:177][879]LogD3D11RHI: CleanupD3DDevice
+[2017.03.04-16.59.57:264][879]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (504)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module SequencerWidgets (502)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module BlueprintGraph (500)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (498)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (496)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module CrashTracker (494)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module SceneOutliner (492)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module AddContentDialog (490)
+[2017.03.04-16.59.57:277][879]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.15/FeaturePacks/' was aborted.
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module WidgetCarousel (489)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module EditorWidgets (486)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module CollectionManager (484)
+[2017.03.04-16.59.57:277][879]LogDirectoryWatcher: A directory notification for 'C:/Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/Collections/' was aborted.
+[2017.03.04-16.59.57:277][879]LogDirectoryWatcher: A directory notification for 'C:/Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/Developers/shang/Collections/' was aborted.
+[2017.03.04-16.59.57:277][879]LogDirectoryWatcher: A directory notification for 'C:/Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Saved/Collections/' was aborted.
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module StatsViewer (482)
+[2017.03.04-16.59.57:277][879]LogModuleManager: Shutting down and abandoning module FoliageEdit (480)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module LandscapeEditor (478)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (476)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module ActorPickerMode (474)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module GeometryMode (472)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module TextureAlignMode (470)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module BspMode (468)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module HardwareSurvey (466)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (464)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module AutomationWorker (462)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (460)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (458)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module PlacementMode (457)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (454)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (452)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module MfMediaFactory (450)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module MfMediaEditor (448)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (446)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (444)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (442)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module Media (441)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (438)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module CharacterAI (436)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module AudioCapture (434)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module SequenceRecorder (433)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module SmartSnapping (430)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module SessionServices (428)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module ViewportSnapping (426)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module ViewportInteraction (424)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module LogVisualizer (422)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module IntroTutorials (420)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (419)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (416)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (414)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (412)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (410)
+[2017.03.04-16.59.57:278][879]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (409)
+[2017.03.04-16.59.57:451][879]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (406)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (404)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module InputBindingEditor (402)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module NiagaraEditor (400)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module MergeActors (398)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module SizeMap (396)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module TreeMap (394)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module ReferenceViewer (392)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (390)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module LocalizationService (389)
+[2017.03.04-16.59.57:452][879]LogModuleManager: Shutting down and abandoning module HardwareTargeting (386)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (384)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module UndoHistory (382)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module UserFeedback (380)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module XmlParser (378)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module Blutility (376)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (374)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (373)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (370)
+[2017.03.04-16.59.57:453][879]LogModuleManager: Shutting down and abandoning module SettingsEditor (368)
+[2017.03.04-16.59.57:454][879]LogModuleManager: Shutting down and abandoning module ProjectLauncher (366)
+[2017.03.04-16.59.57:454][879]LogModuleManager: Shutting down and abandoning module SessionFrontend (364)
+[2017.03.04-16.59.57:454][879]LogModuleManager: Shutting down and abandoning module ProfilerClient (362)
+[2017.03.04-16.59.57:454][879]LogModuleManager: Shutting down and abandoning module DeviceManager (360)
+[2017.03.04-16.59.57:454][879]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (359)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module AutomationController (356)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module AutomationWindow (354)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module Layers (352)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (350)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module DetailCustomizations (348)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module PackagesDialog (346)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module Persona (344)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module AnimGraph (343)
+[2017.03.04-16.59.57:499][879]LogModuleManager: Shutting down and abandoning module Kismet (340)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module GraphEditor (338)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module ClassViewer (336)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module Toolbox (334)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module ModuleUI (332)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module MovieSceneTools (330)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module OutputLog (328)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module GammaUI (326)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module Documentation (324)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module Niagara (322)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (320)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module AnalyticsET (318)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module PortalServices (316)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module PortalRpc (314)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module MessagingRpc (312)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module AIModule (310)
+[2017.03.04-16.59.57:516][879]LogModuleManager: Shutting down and abandoning module GameplayDebugger (309)
+[2017.03.04-16.59.57:517][879]LogModuleManager: Shutting down and abandoning module AITestSuite (307)
+[2017.03.04-16.59.57:517][879]LogModuleManager: Shutting down and abandoning module ProfilerService (304)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module TaskGraph (302)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module SteamVRController (300)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module SteamVR (298)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (296)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (294)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module OculusLibrary (292)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module OculusInput (290)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (288)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (286)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module CableComponent (284)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (282)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (278)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module HTML5Networking (276)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module AlembicImporter (274)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module AlembicLibrary (273)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module GeometryCache (272)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (271)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (266)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module SuperSearch (265)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (262)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module PluginBrowser (260)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (258)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module EpicSurvey (256)
+[2017.03.04-16.59.57:711][879]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (254)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module DesktopPlatform (253)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module UObjectPlugin (250)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (248)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (246)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module GitSourceControl (244)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module SourceControl (243)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (240)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (238)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (236)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module Paper2DEditor (234)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module MeshPaint (233)
+[2017.03.04-16.59.57:712][879]LogModuleManager: Shutting down and abandoning module LevelEditor (231)
+[2017.03.04-16.59.57:713][879]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (230)
+[2017.03.04-16.59.57:713][879]LogModuleManager: Shutting down and abandoning module MainFrame (228)
+[2017.03.04-16.59.57:713][879]LogModuleManager: Shutting down and abandoning module HotReload (227)
+[2017.03.04-16.59.57:715][879]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.03.04-16.59.57:717][879]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (220)
+[2017.03.04-16.59.57:717][879]LogModuleManager: Shutting down and abandoning module PhysXVehicles (218)
+[2017.03.04-16.59.57:717][879]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (216)
+[2017.03.04-16.59.57:717][879]LogModuleManager: Shutting down and abandoning module UdpMessaging (214)
+[2017.03.04-16.59.57:819][879]LogModuleManager: Shutting down and abandoning module TcpMessaging (212)
+[2017.03.04-16.59.57:923][879]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (210)
+[2017.03.04-16.59.57:923][879]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (208)
+[2017.03.04-16.59.57:924][879]LogModuleManager: Shutting down and abandoning module FacialAnimation (206)
+[2017.03.04-16.59.57:924][879]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (204)
+[2017.03.04-16.59.57:924][879]LogModuleManager: Shutting down and abandoning module Paper2D (202)
+[2017.03.04-16.59.57:924][879]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (200)
+[2017.03.04-16.59.57:925][879]LogModuleManager: Shutting down and abandoning module WmfMedia (198)
+[2017.03.04-16.59.57:925][879]LogModuleManager: Shutting down and abandoning module MfMedia (196)
+[2017.03.04-16.59.57:925][879]LogModuleManager: Shutting down and abandoning module MediaAssets (194)
+[2017.03.04-16.59.57:925][879]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (192)
+[2017.03.04-16.59.57:926][879]LogModuleManager: Shutting down and abandoning module VREditor (190)
+[2017.03.04-16.59.57:926][879]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (188)
+[2017.03.04-16.59.57:926][879]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (186)
+[2017.03.04-16.59.57:926][879]LogModuleManager: Shutting down and abandoning module FunctionalTesting (184)
+[2017.03.04-16.59.57:926][879]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (182)
+[2017.03.04-16.59.57:926][879]LogModuleManager: Shutting down and abandoning module UMG (180)
+[2017.03.04-16.59.57:929][879]LogModuleManager: Shutting down and abandoning module UMGEditor (179)
+[2017.03.04-16.59.57:934][879]LogModuleManager: Shutting down and abandoning module Sequencer (178)
+[2017.03.04-16.59.57:934][879]LogModuleManager: Shutting down and abandoning module AssetTools (176)
+[2017.03.04-16.59.57:934][879]LogModuleManager: Shutting down and abandoning module MessageLog (175)
+[2017.03.04-16.59.57:934][879]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (174)
+[2017.03.04-16.59.57:934][879]LogModuleManager: Shutting down and abandoning module SlateReflector (168)
+[2017.03.04-16.59.57:934][879]LogModuleManager: Shutting down and abandoning module Slate (166)
+[2017.03.04-16.59.57:934][879]LogModuleManager: Shutting down and abandoning module EditorStyle (164)
+[2017.03.04-16.59.57:940][879]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (162)
+[2017.03.04-16.59.57:940][879]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (160)
+[2017.03.04-16.59.57:940][879]LogModuleManager: Shutting down and abandoning module XAudio2 (158)
+[2017.03.04-16.59.57:940][879]LogModuleManager: Shutting down and abandoning module Networking (156)
+[2017.03.04-16.59.57:940][879]LogModuleManager: Shutting down and abandoning module Core (152)
+[2017.03.04-16.59.57:940][879]LogModuleManager: Shutting down and abandoning module AssetRegistry (150)
+[2017.03.04-16.59.58:303][879]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.03.04-16.59.58:303][879]LogDirectoryWatcher: A directory notification for '../../../../../../Users/shang/Documents/Unreal Projects/Shangda_Wus_Book/Content/' was aborted.
+[2017.03.04-16.59.58:303][879]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.03.04-16.59.58:303][879]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (149)
+[2017.03.04-16.59.58:304][879]LogModuleManager: Shutting down and abandoning module KismetCompiler (146)
+[2017.03.04-16.59.58:304][879]LogModuleManager: Shutting down and abandoning module PhysXFormats (144)
+[2017.03.04-16.59.58:304][879]LogModuleManager: Shutting down and abandoning module MeshUtilities (142)
+[2017.03.04-16.59.58:304][879]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (141)
+[2017.03.04-16.59.58:304][879]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (139)
+[2017.03.04-16.59.58:304][879]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (137)
+[2017.03.04-16.59.58:304][879]LogModuleManager: Shutting down and abandoning module PropertyEditor (135)
+[2017.03.04-16.59.58:304][879]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
+[2017.03.04-16.59.58:365][879]LogDerivedDataCache: Shutdown
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module TargetPlatform (130)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (129)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (127)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (125)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (123)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (121)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (119)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (117)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (115)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (113)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module ImageWrapper (112)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (109)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (107)
+[2017.03.04-16.59.58:365][879]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (105)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (103)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (101)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (99)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (97)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (95)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (93)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Messaging (91)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (89)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (87)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (85)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (83)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (77)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (75)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (73)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (71)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (69)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (67)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (65)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (63)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (61)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (59)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (57)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (55)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (53)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module InputCore (50)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module Settings (48)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module OculusRift (46)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.03.04-16.59.58:366][879]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.03.04-16.59.58:366][879]LogOnline:Display: Unloading online subsystem: NULL
+[2017.03.04-16.59.58:367][879]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.03.04-16.59.58:367][879]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.03.04-16.59.58:367][879]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.03.04-16.59.58:367][879]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B567DFA96-4A81-D5EA-2738-68846E69279D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.0-3299760%2B%2B%2BUE4%2BRelease-4.15&UserID=a231bfa54ebfa1884fddf88ff15c4b67%7Cdfb84846bd18458ea4123b3e7e2ad85b%7Cfd703aee-249f-4dad-9698-b22c87760a14&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.03.04-16.59.58:399][879]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.03.04-16.59.58:401][879]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.03.04-16.59.58:401][879]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.03.04-16.59.58:401][879]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.03.04-16.59.58:401][879]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.03.04-16.59.58:401][879]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.03.04-16.59.58:404][879]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.03.04-16.59.58:409][879]LogExit: Exiting.
+[2017.03.04-16.59.58:412][879]Log file closed, 03/05/17 00:59:58
